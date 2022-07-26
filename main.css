@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:70%;
+    height:100vh;
+    background:white;
+    position: absolute;
+    border-radius: 0px 10px 10px 0px;
+}
+.container button{
+    margin: 10px 0px 5px 10px;
+    border-radius:50%;
+    border:none;
+    background: none;
+}
+.container button  img{
+    width:30px;
+    height:30px;
+    font-size:10px;
+    
+}
+.nav ul{
+    margin-left: 20px;
+    list-style: none;
+    margin-top: 50px;
+    
+}
+.nav ul li{
+    padding: 10px 0px 10px 0px;
+}
+.nav ul li a{
+    width:100px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 17.5px;
+    
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
