@@ -1,43 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+:root{
+    --custom-font: 'Kumbh Sans', sans-serif;
+    --Orange:hsl(26, 100%, 55%);
+    --pale-orange:hsl(25, 100%, 94%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --dark-grayish-blue:hsl(219, 9%, 45%);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:var(--custom-font);
 }
-.container{
-    width:70%;
-    height:100vh;
-    background:white;
-    position: absolute;
-    border-radius: 0px 10px 10px 0px;
+@media screen and (max-width:394px) {
+    .first_background{
+        width:100%;
+        height:fit-content;
+        margin-top:40px;
+    }
+    .first_background #product_pic{
+        width:100%;
+    }
+    .container{
+        width:100%;
+        height:50px;
+        background:white;
+        box-shadow: 5px 5px 12px 1px rgba(14, 13, 13, 0.1);
+        position: absolute;
+        top: 0;
+    }
+    .inner_one{
+        width:10%;
+        height:10%;
+    }
+    .ham_btn div {
+        width:40px;
+        height:40px;
+        
+    }
+    .icons{
+        width:20px;
+        height:20px;
+        margin: 10px 0px 0px 10px;
+        
+    }
+    .nav ul{
+        margin-left: 20px;
+        list-style: none;
+        margin-top: 50px;
+        
+    }
+    .nav ul li{
+        padding: 10px 0px 10px 0px;
+    }
+    .nav ul li a{
+        width:100px;
+        height: 40px;
+        text-decoration: none;
+        font-size: 17.5px;
+        
+    }
+    .nav{
+        width:70%;
+        height:100vh;
+        background:white;
+        position:absolute;
+        border-radius: 0px 10px 10px 0px;
+        top:0;
+        box-shadow: 10px 0px 10px 1px rgba(14, 13, 13, 0.1);
+        display:none;
+    }
+    .product_buying_section{
+        width:100%;
+        height:fit-content;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .brand{
+        font-family: var(--custom-font);
+        text-transform: uppercase;
+        color:var(--Orange);
+        font-family:700;
+        font-size: 12.5px;
+        margin-left: 10px;
+
+    }
+    .product_heading{
+
+        width:100%;
+        height:fit-content;
+        margin: 10px;
+        text-align: left;
+    }
+    .product_description{
+        width:90%;
+        margin-left:10px;
+        color:var(--dark-grayish-blue);
+        line-height: 20px;
+        font-size:14.5px;
+    }
+    .price_area{
+        width:90%;
+        margin:5% 0px 0px 5%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .discount_area{
+        width: 50%;
+        display:flex;
+    }
+    .price{
+        width:60%;
+        font-size:25.5px;
+        font-weight:700;
+    }
+    .discount{
+        width:40%;
+    }
+    .discount{
+        width:fit-content;
+        height:fit-content;
+        padding:3px;
+        background:var(--pale-orange);
+        color:var(--Orange);
+        line-height:20px;
+        font-weight:700;
+        border-radius:5px;
+    }
+
+    .original_price{
+        width:50%;
+        text-align: right;
+        margin-right: 10px;
+        text-decoration: line-through;
+        font-weight: 700;
+        color:var(--dark-grayish-blue);
+
+    }
+    .quantity_area >.add2cart{
+        width:90%;
+        height:50px;
+        margin:5% 0px 0px 5%;
+        
+    }
+    .quantity{
+        width:90%;
+        height:50px;
+        margin: 5% 0 0 5%;
+        padding:10px 10px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        background:var(--Light-grayish-blue);
+    }
+    .quantity_sign{
+        background: none;
+        border:none;
+    }
+    .add2cart {
+        width:90%;
+        height: 40px;
+       background: var(--Orange);
+       border-style: none;
+       border-radius: 10px;
+       text-align: center;
+       color: white;
+       display: block;
+    }
+    .add2cart p{
+        text-align: center;
+    }
+      
 }
-.container button{
-    margin: 10px 0px 5px 10px;
-    border-radius:50%;
-    border:none;
-    background: none;
-}
-.container button  img{
-    width:30px;
-    height:30px;
-    font-size:10px;
+   
     
-}
-.nav ul{
-    margin-left: 20px;
-    list-style: none;
-    margin-top: 50px;
-    
-}
-.nav ul li{
-    padding: 10px 0px 10px 0px;
-}
-.nav ul li a{
-    width:100px;
-    height: 40px;
-    text-decoration: none;
-    font-size: 17.5px;
-    
-}
+
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
