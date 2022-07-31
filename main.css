@@ -86,7 +86,7 @@
         width:70%;
         height:100vh;
         background:white;
-        position:absolute;
+        position:fixed;
         border-radius: 0px 10px 10px 0px;
         top:0;
         box-shadow: 10px 0px 10px 1px rgba(14, 13, 13, 0.1);
