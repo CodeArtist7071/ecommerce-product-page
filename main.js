@@ -8,3 +8,21 @@ function myfunction(){
     }
    
 }
+function addvalue(){
+    var val = document.getElementById("value");
+    var increament = document.getElementById("add");
+    increament.onclick.val.add();
+   
+}
+function subvalue(){
+    var decreament = document.getElementById("subtract");
+    decreament.onclick.val.subtract();
+    
+}
+function subtract(){
+    val--;
+}
+
+function add(){
+    val++;
+}
