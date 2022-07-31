@@ -8,21 +8,36 @@ function myfunction(){
     }
    
 }
-function addvalue(){
-    var val = document.getElementById("value");
-    var increament = document.getElementById("add");
-    increament.onclick.val.add();
-   
+i = 0;
+function incrementvalue(){
+   document.getElementById("value").innerHTML = i;
+    i++;
 }
-function subvalue(){
-    var decreament = document.getElementById("subtract");
-    decreament.onclick.val.subtract();
+function changevalue(){
+    incrementvalue();
+    decrementvalue();
+}
+function decrementvalue(){
+    document.getElementById("value").innerHTML = i;
+    if(i>0){
+        i--;
+    }
     
 }
-function subtract(){
-    val--;
-}
 
-function add(){
-    val++;
-}
+function popup(){
+    var x = document.getElementById("div");
+    document.getElementById("add2cart");
+        if(x.style.display == "none"){
+            x.style.display = "inline-flex"
+          var y = document.getElementById("value").innerHTML;
+          document.getElementById("valuetag").innerHTML = y + " products added to your cart"
+           
+            
+           
+        }else{
+            x.style.display ="none"
+        }
+    }
+
+

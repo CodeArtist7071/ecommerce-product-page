@@ -19,7 +19,11 @@
         <div class="inner_one">
           <a id="hamburger_btn" class="ham_btn" href="javascript:void(0);" onclick="myfunction()"><div><img class="icons" src="images/icon-menu.svg" alt="" srcset=""></div></a>
         </div>
-        
+        <div class="logo"></div>
+        <div class="right">
+          <div class="mycart"><img src="images/icon-cart.svg" alt="" srcset=""></div>
+          <div class="profile"><img src="images/image-avatar.png" alt="" srcset=""></div>
+        </div>
       </div>
      
       <div id ="nav-bar" class="nav">
@@ -52,12 +56,18 @@
 
   <div class="quantity_area">
     <div class="quantity">
-      <button id ="subtract" href="javascript(0):void;" onclick="subvalue()" class="quantity_sign"><img src="images/icon-minus.svg" alt="" srcset=""></button>
-      <p id="value" href="javascript:void(0);">0</p>
-      <button id ="add" href="javascript(0):void;" onclick="addvalue()" class="quantity_sign"><img src="images/icon-plus.svg" alt="" srcset=""></button>
+      <button id ="subtract" href="javascript(0):void;" onclick="decrementvalue()" class="quantity_sign"><img src="images/icon-minus.svg" alt="" srcset=""></button>
+      <p id="value" href="javascript:void(0);" onclick="changevalue()"></p>
+      <button id ="add" href="javascript(0):void;" onclick="incrementvalue();" class="quantity_sign"><img src="images/icon-plus.svg" alt="" srcset=""></button>
+    </div>
+    <div class="addcart">
+      <div id="div" class="div">
+        <span id ="valuetag" class="popup"><p class="popup" id="values"></p></span>
+      </div>
+      <button id="add2cart" class="add2cart" onclick="popup()"><p>Add to cart</p></button>
+        
     </div>
     
-    <button class="add2cart"><p>Add to cart</p></button>
   </div>
    <div class="attribution" style="display: none;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
