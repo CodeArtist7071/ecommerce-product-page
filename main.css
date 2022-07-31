@@ -13,6 +13,9 @@
     font-family:var(--custom-font);
 }
 @media screen and (max-width:394px) {
+    *{
+        box-sizing: border-box;
+    }
     .first_background{
         width:100%;
         height:fit-content;
@@ -108,7 +111,7 @@
     }
     .product_heading{
 
-        width:100%;
+        width:90%;
         height:fit-content;
         margin: 10px;
         text-align: left;
