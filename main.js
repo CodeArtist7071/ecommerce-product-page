@@ -19,25 +19,20 @@ function changevalue(){
 }
 function decrementvalue(){
     document.getElementById("value").innerHTML = i;
-    if(i>0){
-        i--;
-    }
-    
+    --i;
 }
 
 function popup(){
     var x = document.getElementById("div");
     document.getElementById("add2cart");
         if(x.style.display == "none"){
-            x.style.display = "inline-flex"
+            x.style.display = "block"
           var y = document.getElementById("value").innerHTML;
           document.getElementById("valuetag").innerHTML = y + " products added to your cart"
-           
-            
-           
-        }else{
+           }else{
             x.style.display ="none"
         }
     }
+    
 
 
