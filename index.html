@@ -8,71 +8,82 @@
   <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
-  <div class="first_background">
-    <img id="product_pic" src="images/image-product-1.jpg" alt="" srcset="">
-    <div id="container" class="container">
-      <div class="btn_bckground">
-        <div class="inner_one">
-          <a id="hamburger_btn" class="ham_btn" href="javascript:void(0);" onclick="myfunction()"><div><img class="icons" src="images/icon-menu.svg" alt="" srcset=""></div></a>
+<div id="nav" class="navbar">
+  <div class="ham"><img onclick="myfunction()" src="images/icon-menu.svg" alt="" srcset=""></div>
+  <div class="logo"></div>
+  
+  <div id="links"class="link">
+    <div class="close">
+      <img onclick="myfunction()" src="images/icon-close.svg" alt="" srcset="">
+    </div>
+    <ul>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+ </div>
+  
+  <div class="mycart"><img src="images/icon-cart.svg" alt="" srcset=""></div>
+  <div class="profile-pic"><img src="images/image-avatar.png" alt="" srcset=""></div>
+</div>
+  <div class="division">
+    <div class="left-corner">
+      <div class="product-pics">
+         <img src="images/image-product-1.jpg" alt="" srcset="">
+      </div>
+      <div class="pics-bar">
+        <div class="outer"><img src="images/image-product-1-thumbnail.jpg" alt="" srcset=""></div>
+        <div class="outer"><img src="images/image-product-2-thumbnail.jpg" alt="" srcset=""></div>
+        <div class="outer"><img src="images/image-product-3-thumbnail.jpg" alt="" srcset=""></div>
+        <div class="outer"><img src="images/image-product-4-thumbnail.jpg" alt="" srcset=""></div>
+      </div>
+    </div>
+    <div class="right-corner">
+      <div class="product-details">
+        <p class="brand">Sneaker Company</p>
+        <h2 class="product-heading">Fall Limited Edition Sneakers</h2>
+        <p class="product-p">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="price-area">
+          <div class="discount-area">
+            <div class="price"><b>$125.00</b></div>
+            <div class="discount">50%</div>
+          </div>
+          <div class="original-price">$250.00</div>
         </div>
-        <div class="logo"></div>
-        <div class="right">
-          <div class="mycart"><img src="images/icon-cart.svg" alt="" srcset=""></div>
-          <div class="profile"><img src="images/image-avatar.png" alt="" srcset=""></div>
+        <div class="quantity-area">
+          <div class="quantity">
+            <button id="sub" onclick="decrementvalue()" class="quantity-sign">-</button>
+            <p id="value" onclick="changevalue()"></p>
+            <button id="add" onclick="incrementvalue()" class="quantity-sign">+</button>
+            
+          </div>
+          <div class="add2cart">
+            <span id="valuetag" onclick="popup()"></span>
+            <button onclick="popup()" class="addcart">Add to cart</button>
+          </div>
         </div>
       </div>
      
-      <div id ="nav-bar" class="nav">
-        <a id="btn" class="btn" href="javascript:void(0);" onclick="myfunction()"><div><img class="icons" src="images/icon-close.svg" alt="" srcset=""></div></a>
-        <ul><li><a href="">Collections</a></li>
-            <li><a href="">Men</a></li>
-            <li><a href="">Women</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-      </div>
     </div>
   </div>
 
-<div class="product_buying_section">
-  <div class="brand"><b>Sneaker Company</b>  </div>
-  <h2 class="product_heading">  Fall Limited Edition Sneakers
-  </h2>
-  <p class="product_description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
-    durable rubber outer sole, they’ll withstand everything the weather can offer.
-  </p>
-<div class="price_area">
-  <div class="discount_area">
-    <div class="price"> $125.00</div>
-    <div class="discount"> 50%</div>
-  </div>
-
-  <div class="original_price">$250.00</div>
-</div>
-
-  <div class="quantity_area">
-    <div class="quantity">
-      <button id ="subtract" href="javascript(0):void;" onclick="decrementvalue()" class="quantity_sign"><img src="images/icon-minus.svg" alt="" srcset=""></button>
-      <p id="value" href="javascript:void(0);" onclick="changevalue()"></p>
-      <button id ="add" href="javascript(0):void;" onclick="incrementvalue();" class="quantity_sign"><img src="images/icon-plus.svg" alt="" srcset=""></button>
-    </div>
-    <div class="addcart">
-      <div id="div" class="div">
-        <span id ="valuetag" class="popup"><p class="popup" id="values"></p></span>
-      </div>
-      <button id="add2cart" class="add2cart" onclick="popup()"><p>Add to cart</p></button>
-        
-    </div>
-    
-  </div>
-   <div class="attribution" style="display: none;">
+  
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
   <script src="main.js"></script>
+  
 </body>
 </html>

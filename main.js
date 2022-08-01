@@ -1,8 +1,8 @@
 function myfunction(){
-    var x = document.getElementById("nav-bar");
+    var x = document.getElementById("links");
     if(x.style.display === "block"){
         x.style.display = "none"
-        x.style.transition = ".6sc ease-in-out"
+      
     }else{
         x.style.display = "block"
     }
@@ -19,12 +19,15 @@ function changevalue(){
 }
 function decrementvalue(){
     document.getElementById("value").innerHTML = i;
-    --i;
+    if(i>0){
+        --i;
+    }
+   
 }
 
 function popup(){
-    var x = document.getElementById("div");
-    document.getElementById("add2cart");
+    var x = document.getElementById("valuetag");
+    document.getElementById("addcart");
         if(x.style.display == "none"){
             x.style.display = "block"
           var y = document.getElementById("value").innerHTML;
