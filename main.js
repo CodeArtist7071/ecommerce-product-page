@@ -34,8 +34,25 @@ function popup(){
           document.getElementById("valuetag").innerHTML = y + " products added to your cart"
            }else{
             x.style.display ="none"
-        }
-    }
+        } }
     
+function one(){
 
+     var b = document.getElementById("project-img");
+     b.src = "images/image-product-1.jpg"
+     }
+     function two(){
+    
+        var b =document.getElementById("project-img");
+        b.src = "images/image-product-2.jpg"
+
+     }
+     function three(){
+        var b =document.getElementById("project-img");
+        b.src = "images/image-product-3.jpg"
+     }
+     function four(){
+        var b =document.getElementById("project-img");
+        b.src = "images/image-product-4.jpg"
+     }
 

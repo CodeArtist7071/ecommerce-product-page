@@ -38,19 +38,19 @@
 <!------Main body section starts here ----->
   <div class="division">
     <div class="left-corner">
-      <div class="product-pics">
-         <img src="images/image-product-1.jpg" alt="" srcset="">
+      <div id="product-pics" class="product-pics">
+         <img href="javascript:void(0);" id="project-img" src="images/image-product-1.jpg" alt="" srcset="">
       </div>
       <div class="pics-bar">
-        <div class="outer"><img src="images/image-product-1-thumbnail.jpg" alt="" srcset=""></div>
-        <div class="outer"><img src="images/image-product-2-thumbnail.jpg" alt="" srcset=""></div>
-        <div class="outer"><img src="images/image-product-3-thumbnail.jpg" alt="" srcset=""></div>
-        <div class="outer"><img src="images/image-product-4-thumbnail.jpg" alt="" srcset=""></div>
+        <div  class="outer"><img id="one" onclick="one()" src="images/image-product-1-thumbnail.jpg" alt="" srcset=""></div>
+        <div class="outer"><img id="two" onclick="two()" src="images/image-product-2-thumbnail.jpg" alt="" srcset=""></div>
+        <div class="outer"><img id="three" onclick="three()" src="images/image-product-3-thumbnail.jpg" alt="" srcset=""></div>
+        <div class="outer"><img id="four" onclick="four()" src="images/image-product-4-thumbnail.jpg" alt="" srcset=""></div>
       </div>
     </div>
     <div class="right-corner">
       <div class="product-details">
-        <p class="brand">Sneaker Company</p>
+        <p id="brand" class="brand">Sneaker Company</p>
         <h2 class="product-heading">Fall Limited Edition Sneakers</h2>
         <p class="product-p">These low-profile sneakers are your perfect casual wear companion. Featuring a 
           durable rubber outer sole, they’ll withstand everything the weather can offer.
@@ -64,9 +64,9 @@
         </div>
         <div class="quantity-area">
           <div class="quantity">
-            <button id="sub" onclick="decrementvalue()" class="quantity-sign">-</button>
+            <button id="sub" onclick="decrementvalue()" class="quantity-sign"><img src="images/icon-minus.svg" alt="" srcset=""></button>
             <p id="value" onclick="changevalue()"></p>
-            <button id="add" onclick="incrementvalue()" class="quantity-sign">+</button>
+            <button id="add" onclick="incrementvalue()" class="quantity-sign"><img src="images/icon-plus.svg" alt="" srcset=""></button>
             
           </div>
           <div class="add2cart">
@@ -78,8 +78,8 @@
      
     </div>
   </div>
-
-  
+  <p id="brande"></p>
+  <!----Main body ends here------>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
