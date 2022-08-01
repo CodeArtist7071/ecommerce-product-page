@@ -1,8 +1,11 @@
 {
     "cSpell.words": [
+        "addcart",
         "changevalue",
         "decrementvalue",
         "incrementvalue",
-        "myfunction"
+        "mycart",
+        "myfunction",
+        "valuetag"
     ]
 }
