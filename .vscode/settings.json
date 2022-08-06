@@ -6,6 +6,8 @@
         "incrementvalue",
         "mycart",
         "myfunction",
+        "prdct",
         "valuetag"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

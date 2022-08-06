@@ -56,3 +56,15 @@ function one(){
         b.src = "images/image-product-4.jpg"
      }
 
+    const navslide=()=>{
+        const ham =document.querySelector('.ham');
+        const nav =document.querySelector('.links');
+        ham.addEventListener('click',()=>{
+           ham.classList.toggle('hames');
+           nav.classList.toggle('nav-links');
+        })
+    }
+    navslide();
+    
+
+

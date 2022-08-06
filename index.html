@@ -16,13 +16,14 @@
 </head>
 <body>
   <!----this is the navbar section starts here feel free to modify your the navbar----->
-<div id="nav" class="navbar">
-  <div class="ham"><img onclick="myfunction()" src="images/icon-menu.svg" alt="" srcset=""></div>
-  <div class="logo"></div>
+  <div class="ham">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+   </div>
+<div id="nav" class="nav">
+  <div class="logo"><img src="images/logo.svg" alt="" srcset=""></div>
   <div id="links" class="links">
-    <div class="close">
-      <img onclick="myfunction()" src="images/icon-close.svg" alt="" srcset="">
-    </div>
     <ul>
       <li><a href="#">Collections</a></li>
       <li><a href="#">Men</a></li>
@@ -31,8 +32,30 @@
       <li><a href="#">Contact</a></li>
     </ul>
  </div>
-  <div class="mycart"><img src="images/icon-cart.svg" alt="" srcset=""></div>
-  <div class="profile-pic"><img src="images/image-avatar.png" alt="" srcset=""></div>
+  <div class="mycart"><img src="images/icon-cart.svg" alt="" srcset="">
+  <div class="mycart-card">
+    <h2>Cart</h2>
+    <div class="prdct-sct">
+      <img src="" alt="">
+      <div class="crt-details">
+        <p class="p1">Autumn Limited Edition...</p>
+        <div class="p-area">
+          <p>$125.00 *</p><p id="valuetag" onclick="popup()" class="quantity-val"></p><p id="total" class="total">=</p>
+        </div>
+       
+      </div>
+    </div>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+  </div>
+  <div class="profile-pic"><img src="images/image-avatar.png" alt="" srcset="">
+  <div class="profile-card">
+     <a href="">Profile</a>
+     <a href="">My Orders</a>
+      <a href="">My Wishlist</a>
+    <a href="">Log Out</a>
+  </div>
+  </div>
 </div>
 <!-----Navbar section ends here ---->
 <!------Main body section starts here ----->
