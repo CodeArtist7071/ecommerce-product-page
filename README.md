@@ -1,5 +1,5 @@
 #Frontend Mentor-Blogr landing page solution
-This is the solution to the [Blogr landing page challenge by Frontend Mentor](https://codeartist7071.github.io/ecommerce-product-page/).
+This is the solution to the [Ecommerce Product page challenge by Frontend Mentor](https://codeartist7071.github.io/ecommerce-product-page/).
 
 
 ##Table of contents
